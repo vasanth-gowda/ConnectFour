@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="rootGridPane" style="-fx-background-color: #DBF6F6;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.iverycool.connectfour.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints maxWidth="367.0" minWidth="320.0" prefWidth="320.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints />
+      <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane GridPane.columnSpan="2" />
+        <Pane fx:id="insertedDiscPane" prefHeight="400.0" prefWidth="200.0" GridPane.rowIndex="1" />
+        <VBox style="-fx-background-color: #0D0326;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <TextField fx:id="playerOneTextField" prefHeight="25.0" prefWidth="0.0" promptText="Player One Name">
+               <VBox.margin>
+                  <Insets left="70.0" right="70.0" top="30.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="playerTwoTextField" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="244.0" promptText="Player Two Name">
+               <VBox.margin>
+                  <Insets bottom="30.0" left="70.0" right="70.0" />
+               </VBox.margin>
+            </TextField>
+            <Button fx:id="setNamesButton" alignment="CENTER" mnemonicParsing="false" style="-fx-background-color: 6666FF;" text="Set Names" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets left="120.0" right="50.0" />
+               </VBox.margin>
+               <effect>
+                  <Glow />
+               </effect>
+            </Button>
+            <Region layoutX="10.0" layoutY="251.0" prefHeight="40.0" prefWidth="320.0" />
+            <Label fx:id="playerName" alignment="CENTER" prefHeight="39.0" prefWidth="320.0" text="Player One's" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB Bold" size="50.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="36.0" prefWidth="371.0" text="Turn" textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua" size="25.0" />
+               </font>
+            </Label>
+            <Region prefHeight="18.0" prefWidth="265.0" />
+         </children>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+        </VBox>
+    </children>
+</GridPane>
